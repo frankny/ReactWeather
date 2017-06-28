@@ -3,7 +3,7 @@ var express = require('express');
 //create our app
 // this is a start script for heroku
 var app = express();
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(function (req, res, next) {
   if (req.headers['x-forwarded-proto'] === 'http') {
